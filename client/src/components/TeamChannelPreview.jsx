@@ -8,7 +8,7 @@ const TeamChannelPreview= ({setActiveChannel,setIsCreating,setIsEditing,setToggl
                 # {channel?.data?.name || channel?.data?.id}
         </p> 
         );
-    //TODO: fix direct message showing incorrect username 
+    //fixed DM side pannel 
     const DirectPreview=()=>{
         const members = Object.values(channel.state.members).filter(({user})=>user.id !== client.userID)
         console.log(members[0])
@@ -17,10 +17,10 @@ const TeamChannelPreview= ({setActiveChannel,setIsCreating,setIsEditing,setToggl
            <div className="channel-preview__item single">
             <Avatar
                 image = {members[0]?.user?.image}
-                name = {members[0]?.user?.fullName || members[0]?.user?.id}
+                name = {members[0]?.user?.fullName || members[0]?.user?.name}
                 size={24}
             />
-            <p>{members[0]?.user?.fullName || members[0]?.user?.id}</p>
+            <p>{members[0]?.user?.fullName || members[0]?.user?.name}</p>
            </div>
             )
         }

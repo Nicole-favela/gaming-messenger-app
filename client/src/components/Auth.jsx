@@ -74,7 +74,7 @@ const Auth=()=>{
                             <div className="auth__form-container_fields-content_input">
                                 <label htmlFor="fullName">Full Name</label>
                                 <input
-                                    name="fullname"
+                                    name="fullName"
                                     type="text"
                                     placeholder="Full Name"
                                     onChange={handleChange}
@@ -86,7 +86,7 @@ const Auth=()=>{
 
                          <div className="auth__form-container_fields-content_input">
                         
-                                <label htmlFor="username">UserName</label>
+                                <label htmlFor="username">Username</label>
                                 <input
                                     name="username"
                                     type="text"
@@ -126,8 +126,8 @@ const Auth=()=>{
                         <div className="auth__form-container_fields-content_input">
                                 <label htmlFor="password">Password</label>
                                 <input
-                                    name="avatarURL"
-                                    type="text"
+                                    name="password"
+                                    type="password"
                                     placeholder="Password"
                                     onChange={handleChange}
                                     required
