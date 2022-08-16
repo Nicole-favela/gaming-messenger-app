@@ -28,7 +28,7 @@ const SideBar = ({logout})=>(
 );
 const CompanyHeader = ()=>(
     <div className = "channel-list__header">
-        <p className="channel-list__header__text">Mood Messenger</p>
+        <p className="channel-list__header__text">Game Chat</p>
     </div>
 )
 const customChannelTeamFilter=(channels)=>{
@@ -37,13 +37,7 @@ const customChannelTeamFilter=(channels)=>{
 const customChannelMessagingFilter=(channels)=>{
     return channels.filter((channel)=>channel.type ==='messaging')
 }
-// const ChannelContainer = ()=>{
-//     return(
-//         <>
-//             <SideBar/>
-//         </>
-//     )
-// }
+
 
 const ChannelListContent = ({ isCreating,
     setIsCreating,setCreateType,

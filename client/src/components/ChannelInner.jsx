@@ -1,13 +1,4 @@
-// import React from "react";
 
-// const ChannelInner=()=>{
-//     return(
-//         <div>ChannelInner</div>
-
-//     )
-// }
-
-// export default ChannelInner;
 import React, { useState } from 'react';
 import { MessageList, MessageInput, Thread, Window, useChannelActionContext, Avatar, useChannelStateContext, useChatContext } from 'stream-chat-react';
 
